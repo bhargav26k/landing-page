@@ -58,6 +58,8 @@ import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
+import { GoogleLensLogo } from '#components/logos/lens'
+import { OpenAILogo } from '#components/logos/gpt'
 
 export const meta: Metadata = {
   title: 'Saas UI Landingspage',
@@ -94,30 +96,30 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Revolutionize
+                <Br /> Search with AI
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                Instantly analyze  <Em>Images and Text </Em>
+                <Br /> with AI-powered insights and  <Br />{' '}
+                seamless search capabilities.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+                <GoogleLensLogo height="28px" /> <OpenAILogo height="20px" />
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+                <ButtonLink colorScheme="primary" size="lg" href="https://chromewebstore.google.com/detail/mygptlens/cboahmnmofomlocaiabdapkcpcieaenn">
+                Start Now
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="https://chromewebstore.google.com/detail/mygptlens/cboahmnmofomlocaiabdapkcpcieaenn"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -132,7 +134,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
+                  Add to Browser
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
